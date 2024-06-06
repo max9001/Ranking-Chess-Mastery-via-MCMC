@@ -1,4 +1,4 @@
-# Chess Player Elo Ratings
+# Chess Player Rankings
 
 This project explores the application of Bayesian methods to estimate rankings for chess players using Markov Chain Monte Carlo (MCMC) sampling techniques. The inspiration for this project comes from [Martin Ingram's blog post](https://martiningram.github.io/mcmc-comparison/) comparing different MCMC algorithms.
 
