@@ -1,16 +1,16 @@
 # Chess Player Elo Ratings
 
-This project explores the application of Bayesian methods to estimate Elo ratings for chess players using Markov Chain Monte Carlo (MCMC) sampling techniques. The inspiration for this project comes from [Martin Ingram's blog post](https://martiningram.github.io/mcmc-comparison/) comparing different MCMC algorithms.
+This project explores the application of Bayesian methods to estimate rankings for chess players using Markov Chain Monte Carlo (MCMC) sampling techniques. The inspiration for this project comes from [Martin Ingram's blog post](https://martiningram.github.io/mcmc-comparison/) comparing different MCMC algorithms.
 
 ## Dataset
 The dataset used for this project is sourced from [Kaggle](https://www.kaggle.com/datasets/datasnaek/chess), containing information about chess games including player IDs and ratings.
 
 ## Methodology
 1. The dataset is preprocessed to extract player IDs and ratings, creating a list of unique players and their maximum ratings.
-2. Bayesian inference is applied to estimate the Elo ratings of the players using PyMC.
+2. Bayesian inference is applied to estimate the rankings of the players using PyMC.
 3. The model is sampled using MCMC methods, specifically the NUTS sampler with the NumPyro backend.
 4. The results are summarized using ArviZ and presented as posterior distributions of player skills.
-5. The Elo ratings are sorted to identify the top and bottom players based on their maximum ratings.
+5. The "skill" metric is sorted to identify the top and bottom players based on their maximum ratings.
 
 ## Results
 | Predicted Ranking | Actual Ranking |       Player Name       | Skill Mean | Skill SD |
